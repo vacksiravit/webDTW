@@ -26,11 +26,11 @@
 					<br>
 					<div style="margin: 15px">
 						<div style="margin-bottom: 25px" class="input-group">
-							<span class="input-group-addon" style="width: 50px;"><i class="fa fa-user"></i></span>
+							<span class="input-group-addon" style="width: 50px;"><i class="glyphicon glyphicon-user"></i></span>
 							<input type="text" name="username" value="<?php if(isset($_POST['username'])) echo $_POST['username'] ?>" autocomplete="off" class="form-control" placeholder="Username" required/>
 						</div>
 					<div style="margin-bottom: 25px" class="input-group">
-						<span class="input-group-addon" style="width: 50px;"><i class="fa fa-key"></i></span>
+						<span class="input-group-addon" style="width: 50px;"><i class="glyphicon glyphicon-lock"></i></span>
 						<input type="password" name="password" autocomplete="off" class="form-control" placeholder="Password" required/>
 					</div>
 					<input type="submit" name='login' value="Login" class='btn btn-lg btn-primary btn-block submit'/>
