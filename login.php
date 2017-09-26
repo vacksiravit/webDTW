@@ -5,9 +5,7 @@
 		// Get data from FORM
 		$username = $_POST['username'];
 		$password = $_POST['password'];
-		echo $WEB_edit_user;
-		echo "<br>";
-		echo $WEB_edit_pass;
+
 		if($errMsg == '') 
 		{
 			try 
