@@ -1,10 +1,9 @@
     body{
       font-family: 'Athiti', sans-serif;
-      font-weight: 900;
+      font-weight: 400; 
     }
-	/* ================= Login Form ================= */
     .colorgraph {
-      height: 3px;
+      height: 7px;
       border-top: 0;
       background: #c4e17f;
       border-radius: 5px;
@@ -23,13 +22,15 @@
       padding: 30px 38px;
       margin: 0 auto;
       background-color: #eee;
+	  
       border: 3px dotted rgba(0,0,0,0.1);  
     }
 
     .form-signin-heading {
       text-align:center;
       margin-bottom: 30px;
-	  color:006666;
+	  color:#303F9F;
+	  font-weight:400;
     }
 
     .form-control {
@@ -43,15 +44,42 @@
 	  padding-top:20px;
 	  color:#6666ff;
 	}
-    input[type="text"] {
-      margin-bottom: 0px;
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: 0;
-    }
-
-    input[type="password"] {
-      margin-bottom: 20px;
-      border-top-left-radius: 0;
-      border-top-right-radius: 0;
-    }
 	
+	/*Modal*/
+	.form-group{
+		margin:25px;
+	}
+	
+	.headerbox{
+		width:100%;
+		padding:20px;
+		text-align:center;
+	}
+	.headerbox-left{
+		float:left;
+		font-size:20px;
+		color:#0000CD;
+		padding-top:15px;
+	}
+	.headerbox-right{
+		float:right;
+		text-size:20px;
+	}
+	.form-group-user{
+		margin:20px;
+		width:100%;
+	
+	}
+	.form-group-user label{
+		display:inline;
+		text-align:right;
+		margin-right:15px;
+		clear:both;
+		width:40%;
+	}
+	.form-group-user input{
+		display:inline;
+		text-align:left;
+		width:60%;
+		
+	}
