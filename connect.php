@@ -59,6 +59,14 @@
 			$WEB_pass = $data[$x][1];
 			// echo $tbname."\n";
 		}
+		if($data[$x][0] == "WEB_EDIT_USER"){
+			$WEB_edit_user = $data[$x][1];
+			// echo $tbname."\n";
+		}
+		if($data[$x][0] == "WEB_EDIT_PASS"){
+			$WEB_edit_pass = $data[$x][1];
+			// echo $tbname."\n";
+		}
 		if($data[$x][0] == "REFRESH"){
 			$REFRESH = $data[$x][1];
 			// echo $tbname."\n";

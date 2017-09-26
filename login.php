@@ -5,13 +5,17 @@
 		// Get data from FORM
 		$username = $_POST['username'];
 		$password = $_POST['password'];
+		echo $WEB_edit_user;
+		echo "<br>";
+		echo $WEB_edit_pass;
 		if($errMsg == '') 
 		{
 			try 
 			{
-				if($username != $WEB_user)
+				if(($username != $WEB_user) && ($username != $WEB_edit_user))
 				{
 					$errMsg = "Username Or Password not valid";
+					echo "AAA";
 				}
 				else 
 				{
@@ -21,6 +25,12 @@
 						$_SESSION['pass'] = md5($WEB_pass);
 						header('Location: home.php');
 						exit;
+					}
+					else if($username == $WEB_edit_user && $password == $WEB_edit_pass)
+					{
+						$_SESSION['time'] = time();
+						$_SESSION['pass'] = md5($WEB_edit_pass);
+						header('Location: home.php');
 					}
 					else
 						$errMsg = 'Username Or Password not valid';

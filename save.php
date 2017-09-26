@@ -12,10 +12,21 @@
 		
 		$stmt->bindParam(':value',$_POST['value']);
 		$stmt->bindParam(':username',$_POST['username']);
-//		$stmt->execute();
+		if($_SESSION['pass'] == md5($WEB_edit_pass))
+		{
+			$stmt->execute();
+			header('Location: home.php');
+		}
+		else
+		{
+			echo "<script> 	
+					alert('Sorry you account can not edit data');
+					window.location.href='./home.php';		
+				</script>";
+		}
 	}
 	catch(PDOException $e){
 		echo $sql . "<br>" . $e->getMessage();
     }
-	header('Location: home.php');
+	
 ?>
