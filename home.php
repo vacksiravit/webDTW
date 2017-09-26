@@ -27,7 +27,9 @@
 				
 				<nav class="headerbox" role="navigation">
 					<div class="headerbox-left">
-						Duang Tawan Hotel WIFI Management.
+					<div class="Logout" style="text-overflow:clip;">
+						<a href="logout.php">Duang Tawan Hotel WIFI Management.&nbsp;&nbsp; >> Logout <<</a>
+					</div>
 					</div>
 					<div class="headerbox-right">
 					<span style="float:left; padding-top:20px;" class="glyphicon glyphicon-search"></span>

@@ -57,7 +57,7 @@
 	}
 	.headerbox-left{
 		float:left;
-		font-size:20px;
+		font-size:18px;
 		color:#0000CD;
 		padding-top:15px;
 	}
@@ -82,4 +82,32 @@
 		text-align:left;
 		width:60%;
 		
+	}
+	div.Logout{
+		white-space:nowrap;
+		width:315px;
+		overflow:hidden;
+		/*border: 2px solid #000;*/
+	}
+	div.Logout:hover{
+		text-overflow:inherit;
+		overflow:visible;
+	}
+	a:link {
+    color: red;
+}
+
+	/* visited link */
+	a:visited {
+		color: none;
+	}
+
+	/* mouse over link */
+	a:hover {
+		color: red;
+	}
+
+	/* selected link */
+	a:active {
+		color: none;
 	}
