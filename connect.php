@@ -32,7 +32,7 @@
 
 	for($x =0;$x<$line;$x++) {
 		if($data[$x][0] == "DB_SERVER"){
-			$$DB_host = $data[$x][1];
+			$DB_host = $data[$x][1];
 			// echo $dbserver."\n";
 		}
 		if($data[$x][0] == "DB_USER"){
